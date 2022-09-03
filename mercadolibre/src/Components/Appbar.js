@@ -15,11 +15,12 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import logo from './assets/logo.png'
+import logo from '../assets/logo.png'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import './styles/style.css'
+import '../styles/style.css'
 import { maxWidth } from '@mui/system';
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -133,7 +134,7 @@ export default function PrimarySearchAppBar() {
         <p>Messages</p>
       </MenuItem> */}
       <div style={{display:'flex', flexDirection:'column', position:'relative', right:'86px', top:'4px'}}>
-        <img src='https://http2.mlstatic.com/D_NQ_756491-MLA48681720059_122021-OO.webp' alt='offer' style={{width:'5rem',  position:'relative', bottom:'18px', left:'28px'}}/>
+        <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{width:'5rem',  position:'relative', bottom:'18px', left:'28px'}}/>
         
       <div style={{display:'flex',color:'#333',paddingBottom:'5px', paddingLeft:'28px', position:'relative', left:'25px'}}>
      <Typography sx={{px:'1rem'}}>Creá tu cuenta</Typography> 
@@ -172,9 +173,10 @@ export default function PrimarySearchAppBar() {
   return (
     
     <Box style={{ flexGrow: 1, backgroundColor:'red'}}>
+      
       <AppBar position="static">
         <Toolbar style={{backgroundColor:'#fff159', height:'5.5rem', paddingTop:'12.5px'}}>
-        
+       
           {/* <Typography
             variant="h6"
             noWrap
@@ -227,7 +229,7 @@ export default function PrimarySearchAppBar() {
               </Badge>
             </IconButton> */}
              <div style={{display:'flex', flexDirection:'column', position:'relative', right:'86px', top:'4px' }}>
-        <img src='https://http2.mlstatic.com/D_NQ_756491-MLA48681720059_122021-OO.webp' alt='offer' style={{width:'20rem', position:'relative', bottom:'18px', left:'28px'}}/>
+        <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{width:'20rem', position:'relative', bottom:'18px', left:'28px'}}/>
         
         <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'28px', position:'relative', left:'25px' }}>
    

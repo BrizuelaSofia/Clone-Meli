@@ -1,10 +1,13 @@
-import Appbar from './Appbar';
-import './App.css';
+
+import Detail from './Components/View/Detail';
+import Appbar from './Components/Appbar';
+
 
 function App() {
   return (
     <div className="App">
  <Appbar></Appbar>
+<Detail/>
     </div>
   );
 }

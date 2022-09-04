@@ -92,6 +92,43 @@ padding:20px 0;
 
 
 `
+export const Section =styled.div`
+padding:0 16px 22px ;
+margin:5px 16px;
+border:1px solid #ddd;
+border-radius:8px 8px 0 0;
+
+p.title-guaranty{
+    font-size:18px;
+    color:#000;
+    opacity:90%;
+    border-top:1px solid #ddd;
+   
+    padding-top:30px
+}
+
+
+p.title{
+    font-size:16px;
+    color:#000;
+    opacity:90%;
+    
+
+}
+p.description{
+    font-size:14px;
+    color:#000;
+    opacity:55%;
+    padding-bottom:10px;
+}
+a.link{
+    text-decoration:none;
+    color:#3483fa;
+    font-size:14px;
+   
+  
+}
+`
 
 
 export const Column = styled.div`

@@ -1,4 +1,5 @@
 import React from "react";
+import { SellerInfo } from './SellerInfo';
 import {Container2, Panel, Bear, Column, Description, Section} from '../styles/GlobalStyles'
 
 function Product(){
@@ -15,7 +16,8 @@ function Product(){
                
                 <Column>
                 {/* <Sale/>
-                <SellerInfo/> */} 
+                 */} 
+                <SellerInfo/>
               <Guaranty/>
                 </Column>
 
@@ -49,8 +51,7 @@ const Guaranty =() =>{
               
             
                     <p className="title">Garantía del vendedor</p>
-                    <p className="description">Garantía del vendedor: 1 meses</p>
-              
+                    <p className="description">Garantía del vendedor: 1 meses</p> 
                
             </div>
              <a href="https://github.com/BrizuelaSofia" target="_blank" rel="noreferrer" className="link"> Conocer más sobre garantía</a>

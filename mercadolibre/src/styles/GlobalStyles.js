@@ -1,5 +1,7 @@
 
 import styled from "styled-components";
+import { GoLocation } from "react-icons/go";
+import { FaMedal} from "react-icons/fa";
 //contenedor que separa las dos filas.
 //&+a (aplicaseló a los a a partir del segundo.)
 
@@ -103,7 +105,6 @@ p.title-guaranty{
     color:#000;
     opacity:90%;
     border-top:1px solid #ddd;
-   
     padding-top:30px
 }
 
@@ -130,6 +131,137 @@ a.link{
 }
 `
 
+export const Container3 = styled.div`
+padding:25px 16px;
+margin:0 16px;
+display:flex;
+flex-direction:column;
+border:1px solid #ddd;
+border-radius:8px;
+
+
+.seller-title{
+    font-size:18px;
+    margin-bottom:20px;
+    color:#000;
+    opacity:90%;
+
+}
+`
+export const Card = styled.div`
+display:flex;
+flex-direction:column;
+text-align:start;
+
+>div{
+    margin-left:5px;
+   
+    
+      
+    
+}
+div>p{
+    font-size:16px;
+    line-height:18.9px;
+    color:#000;
+    opacity:90%;
+
+    
+}
+.left{
+    padding-left:10px
+}
+.top{
+position:relative;
+bottom:20px;
+left:10px
+}
+p.green{
+    color:#00a650;
+    line-height:21.6px;
+    font-weight:400;
+   
+    
+}
+.strong{
+    position:relative;
+    bottom:10px;
+   color:#000;
+   opacity:55%;
+   font-weight:100;
+   font-size:14px;
+}
+`
+export const LocationIcon = styled(GoLocation)`
+opacity:.5px;
+padding-top:17px;
+
+
+`
+export const GoldIcon= styled(FaMedal)`
+opacity:.5px;
+color:#00a650;
+
+`
+export const Items = styled.div`
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+
+
+`
+export const Box = styled.ol`
+list-style:none;
+width:100%;
+display:grid;
+grid-template-columns: repeat(5, 1fr);
+grid-gap:7px;
+padding:0 4px;
+>li{
+    width:100%;
+    height:8px;
+   
+&:nth-child(1){
+    background-color:#fff0f0;
+}
+&:nth-child(2){
+    background-color:#fff5e8;
+}
+&:nth-child(3){
+    background-color:#fffcda;
+
+}
+&:nth-child(4){
+    background-color:#f1fdd7;
+}
+&:nth-child(5){
+    background-color:#39b54a;
+    height:12px;
+   
+    
+}
+
+}
+
+`
+export const Row2 = styled.div`
+
+
+`
+export const SupportIcon = styled.div`
+
+
+`
+export const TimeIcon = styled.div`
+
+
+`
+export const Link = styled.div`
+
+
+`
 
 export const Column = styled.div`
 

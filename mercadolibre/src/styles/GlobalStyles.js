@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import { GoLocation } from "react-icons/go";
 import { FaMedal} from "react-icons/fa";
+import { WiTime8} from "react-icons/wi";
 //contenedor que separa las dos filas.
 //&+a (aplicaseló a los a a partir del segundo.)
 
@@ -132,12 +133,13 @@ a.link{
 `
 
 export const Container3 = styled.div`
-padding:25px 16px;
-margin:0 16px;
+padding:20px 16px;
+margin:10px 16px 18px;
 display:flex;
 flex-direction:column;
 border:1px solid #ddd;
 border-radius:8px;
+
 
 
 .seller-title{
@@ -174,7 +176,8 @@ div>p{
 .top{
 position:relative;
 bottom:20px;
-left:10px
+left:10px;
+height:48px;
 }
 p.green{
     color:#00a650;
@@ -220,8 +223,9 @@ grid-template-columns: repeat(5, 1fr);
 grid-gap:7px;
 padding:0 4px;
 >li{
-    width:100%;
+    width:93%;
     height:8px;
+    
    
 &:nth-child(1){
     background-color:#fff0f0;
@@ -240,6 +244,8 @@ padding:0 4px;
     background-color:#39b54a;
     height:12px;
    
+  
+   
     
 }
 
@@ -247,21 +253,61 @@ padding:0 4px;
 
 `
 export const Row2 = styled.div`
+position:relative;
+right:10px;
+display:flex;
+flex-direction:row;
+align-items:flex-start;
+div{
+    width:33%;
+    padding:0 10px;
+    display:flex;
+    flex-direction:column;
+    text-align:center
+}
+div.bottom{
+    
+}
+.number{
+    font-size:22.5px;
+    color:#000;
+    padding-left:15px
+   
 
+}
+
+span{
+    font-size:12px;
+    color:#000;
+    opacity:90%
+   
+}
+img{
+    padding-left:40px
+}
+a.link{
+    
+    text-decoration:none;
+    color:#3483fa;
+    font-size:14px;
+}
 
 `
 export const SupportIcon = styled.div`
 
 
 `
-export const TimeIcon = styled.div`
-
-
-`
 export const Link = styled.div`
-
+a.link{
+    
+    text-decoration:none;
+    color:#3483fa;
+    font-size:14px;
+ 
+}
 
 `
+
 
 export const Column = styled.div`
 

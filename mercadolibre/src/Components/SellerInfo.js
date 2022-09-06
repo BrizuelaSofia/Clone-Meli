@@ -31,22 +31,25 @@ export const SellerInfo = () => {
                 <li className="active"/>
             </Box>
            </Items>
-           <Row2>
-            <div>
-            <strong>253</strong>
-           <span>Ventas en los últimos 60 días</span>
+           <Row2 style={{ display:'flex'}}>
+            <div className="bottom">
+            <strong className="number">257</strong>
+           <span style={{width:'5rem'}}>Ventas en los últimos 60 días</span>
             </div>
             <div>
-            <strong><SupportIcon/></strong>
-           <span>Brinda buena atención</span>
+            {/* <strong><SupportIcon/>HOLA</strong> */}
+            <img src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/message-positive.svg" alt="support" height={30} width={30}/>
+           <span style={{width:'4.5rem'}}>Brinda buena atención</span>
             </div>
             <div>
-            <strong><TimeIcon/></strong>
-           <span>Despacha sus productos a tiempo</span>
+            
+            <img src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/time-positive.svg" alt="timer" height={30} width={30}/>
+           <span style={{width:'4.5rem'}}>Despacha sus productos a tiempo</span>
             </div>
            
            </Row2>
-           <Link href="#">Ver más datos de este vendedor</Link>
+           <Link> <a href="https://github.com/BrizuelaSofia" target="_blank" rel="noreferrer" className="link">Ver más datos de este vendedor</a></Link>
+          
             </Container3>
         </div>
     )

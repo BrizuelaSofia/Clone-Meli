@@ -3,9 +3,9 @@ import { Container3, Card, LocationIcon, GoldIcon, Items, Box, Row2, SupportIcon
 
 export const SellerInfo = () => {
     return(
-        <div>
+        <div style={{width:'378px'}}>
             <Container3>
-            <p className="seller-title">Información del vendedor</p>
+            <p className="seller-title">Información sobre el vendedor</p>
            <Card>
             <div style={{display:'flex'}}>
             <LocationIcon/>
@@ -32,11 +32,11 @@ export const SellerInfo = () => {
             </Box>
            </Items>
            <Row2 style={{ display:'flex'}}>
-            <div className="bottom">
+            <div className="bottom div">
             <strong className="number">257</strong>
-           <span style={{width:'5rem'}}>Ventas en los últimos 60 días</span>
+           <span style={{width:'5rem', paddingLeft:'10px'}}>Ventas en los últimos 60 días</span>
             </div>
-            <div>
+            <div className="border">
             {/* <strong><SupportIcon/>HOLA</strong> */}
             <img src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/message-positive.svg" alt="support" height={30} width={30}/>
            <span style={{width:'4.5rem'}}>Brinda buena atención</span>

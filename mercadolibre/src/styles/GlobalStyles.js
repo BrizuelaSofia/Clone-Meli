@@ -101,12 +101,16 @@ margin:5px 16px;
 border:1px solid #ddd;
 border-radius:8px 8px 0 0;
 
+
 p.title-guaranty{
     font-size:18px;
     color:#000;
     opacity:90%;
     border-top:1px solid #ddd;
-    padding-top:30px
+    padding-top:30px;
+    margin-top:30px
+    
+  
 }
 
 
@@ -127,6 +131,7 @@ a.link{
     text-decoration:none;
     color:#3483fa;
     font-size:14px;
+  
    
   
 }
@@ -134,11 +139,12 @@ a.link{
 
 export const Container3 = styled.div`
 padding:20px 16px;
-margin:10px 16px 18px;
+margin:32px 16px 18px;
 display:flex;
 flex-direction:column;
 border:1px solid #ddd;
 border-radius:8px;
+
 
 
 
@@ -253,25 +259,37 @@ padding:0 4px;
 
 `
 export const Row2 = styled.div`
-position:relative;
-right:10px;
+
 display:flex;
 flex-direction:row;
 align-items:flex-start;
+// border:1px solid #ddd;
+
+
 div{
-    width:33%;
-    padding:0 10px;
+    width:40%;
+    height:4.5rem;
     display:flex;
     flex-direction:column;
-    text-align:center
+    text-align:center;
+    margin-bottom:24px;
+   
+    
+  
 }
-div.bottom{
+
+div.border{
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
     
 }
 .number{
     font-size:22.5px;
     color:#000;
-    padding-left:15px
+    
+    
+
+
    
 
 }
@@ -279,17 +297,17 @@ div.bottom{
 span{
     font-size:12px;
     color:#000;
-    opacity:90%
+    opacity:70%;
+    line-height:12px;
+    letter-spacing:normal;
+    padding-top:8px
+   
    
 }
+
+
 img{
     padding-left:40px
-}
-a.link{
-    
-    text-decoration:none;
-    color:#3483fa;
-    font-size:14px;
 }
 
 `
@@ -303,6 +321,7 @@ a.link{
     text-decoration:none;
     color:#3483fa;
     font-size:14px;
+   
  
 }
 

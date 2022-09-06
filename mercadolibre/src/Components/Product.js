@@ -1,7 +1,7 @@
 import React from "react";
 import { SellerInfo } from './SellerInfo';
 import {Container2, Panel, Bear, Column, Description, Section} from '../styles/GlobalStyles'
-
+import { Sale } from './Sale';
 function Product(){
     return(
         <Container2>
@@ -15,8 +15,8 @@ function Product(){
                 </Column>
                
                 <Column>
-                {/* <Sale/>
-                 */} 
+                <Sale/>
+                 
                 <SellerInfo/>
               <Guaranty/>
                 </Column>
@@ -39,7 +39,7 @@ const Info =() =>{
 }
 const Guaranty =() =>{
     return(
-        <Section>
+        <Section style={{width:'312px'}}>
             <p style={{fontSize:'18px', opacity:'90%', paddingTop:'16px'}}>Devolución Grátis</p>
             <p className="description">Tenés 30 días desde que recibís el producto para devolverlo. ¡No importa el motivo!</p>
             <a href="https://github.com/BrizuelaSofia" target="_blank" rel="noreferrer" className="link"> Conocer más sobre devoluciones</a>

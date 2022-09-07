@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import {Container4, State, Row3, HeartIcon, Price, Card2, Stock, ButtonCard, Benefits, TrophyIcon, CheckIcon} from '../styles/GlobalStyles'
+import {Container4, State, Row3, HeartIcon, Price, Card2, Stock, ButtonCard, Benefits, TrophyIcon, CheckIcon, ArrowIcon} from '../styles/GlobalStyles'
 export const Sale= () =>{
   return(
     <Container4 >
@@ -28,7 +28,7 @@ export const Sale= () =>{
 
            </div> 
            <div className="top">
-        
+           <ArrowIcon/>
            <span className="title">Devolución gratis</span>
            <span className="text">Tenes 30 días desde que lo recibís</span> 
            <a href="https://github.com/BrizuelaSofia" target="_blank" rel="noreferrer" className="link">Conocer más</a>
@@ -37,24 +37,24 @@ export const Sale= () =>{
 
            <Stock>
             <h5>Stock disponible</h5>
-            <p>Cantidad <strong>1 unidad</strong>  </p>
+            <p>Cantidad <strong>1 unidad</strong> <span>(10 disponibles)</span>  </p>
           
-          <input type="number" value=""/>
-          <span>(10 disponibles)</span>
+          
+         
            </Stock>
            <ButtonCard>
             <Button className='solid'><p>Comprar ahora</p></Button>
             <Button className="light"><p>Agregar al carrito</p></Button>
            </ButtonCard>
           <Benefits>
-            <li>
+            <div className="row">
             <CheckIcon/> 
           <p>Compra Protegida, <span>recibí el producto que esperabas o te devolvemos tu dinero</span></p>
-            </li>
-            <li>
+            </div>
+            <div className="row">
             <TrophyIcon/>
-           <p>Mercado Puntos. <span>Sumás 78 puntos</span></p>
-            </li>
+           <p className="bottom">Mercado Puntos. <span>Sumás 78 puntos</span></p>
+            </div>
             </Benefits> 
        
     </Container4>

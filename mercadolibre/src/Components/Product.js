@@ -32,8 +32,8 @@ const Info =() =>{
         
         <Description>
    
-            <p>Caracteristicas principales</p>
-            <table>
+            <p className="title" style={{marginBottom:'32px'}}>Caracteristicas principales</p>
+            <table cellSpacing={0}>
                 <tbody>
                     <tr rowspan>
                         <th>Marca</th>
@@ -58,19 +58,21 @@ const Info =() =>{
                 </tbody>
             </table>
        
-            <p>Otras características</p>
-            <div>
-            <div>
+            <p className="other">Otras características</p>
+            <div className="flex">
+            <div className="column">
                 <p>Material: Peluche</p>
                 <p>Es material hipoalergénico: Sí</p>
             
             </div>
-            <p>Altura x Ancho: 45 cm x 35 cm</p>
+            <p className="pleft">Altura x Ancho: 45 cm x 35 cm</p>
             </div>
-            <h4>Descripción</h4>
-            <p>Hermosisimo peluche para regalar enamorados. De 45 cm.<br/>
+            <div className="border">
+            <h4 className="title">Descripción</h4>
+            <p className="bear">Hermosisimo peluche para regalar enamorados. De 45 cm.<br/>
                Entrega en nuestro local de once o te enviamos a todo el país.
             </p>
+            </div>
         </Description>
     )
 }

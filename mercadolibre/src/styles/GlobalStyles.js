@@ -2,7 +2,10 @@
 import styled from "styled-components";
 import { GoLocation } from "react-icons/go";
 import { FaMedal} from "react-icons/fa";
-import { HiOutlineHeart, HiOutlineCheck, HiOutlineShieldCheck} from "react-icons/hi";
+import { BiCheckShield} from "react-icons/bi";
+import { GrTrophy } from "react-icons/gr";
+import { TbArrowBack } from "react-icons/tb";
+import { BsHeart} from "react-icons/bs";
 //contenedor que separa las dos filas.
 //&+a (aplicaseló a los a a partir del segundo.)
 
@@ -79,18 +82,91 @@ border-top: 1px solid #ddd;
 width:88%;
 margin:0 auto;
 padding:20px 0;
+table{
+  border:.2px solid #ebebeb;
+  border-radius:6px;
+   
+}
 
->h4{
+th{
+  text-align:start;
+  padding:15px 24px 15px 16px;
+  width:20vh;
+  color:#000;
+  opacity:90%;
+  font-weight:600;
+
+
+ 
+}
+
+table tr:nth-child(odd){
+    td{
+         background-color:#f5f5f5
+    }
+    th{
+        background-color:#ebebeb
+    }
+   
+}
+table tr:nth-child(even){
+    th{
+         background-color:#f5f5f5
+    }
+    
+   
+}
+
+
+ 
+}
+td{
+    
+    width:100vh;
+padding-left:24px;
+font-size:16px;
+color:#000;
+opacity:90%;
+}
+.border{
+    border-top:1px solid #ddd;
+    margin-top:35px;
+    padding-top:5px
+}
+
+.title{
     
     font-size:24px;
     line-height:30px;
     color:#000;
     opacity:90%;
 }
->p{
+.other{
+    font-size:20px;
+    line-height:25px;
+    color:#000;
+    opacity:90%;
+   
+    margin-top:32px;
+
+}
+.flex{
+    display:flex;
+    font-size:13px;
+    
+}
+.pleft{
+    margin-left:12rem
+   
+  
+ 
+}
+
+.bear{
     font-size:20px;
     line-height:27px;
     color:#666;
+    opacity:90%
 }
 
 
@@ -365,7 +441,7 @@ justify-content:space-between;
 }
 
 `
-export const HeartIcon = styled(HiOutlineHeart)`
+export const HeartIcon = styled(BsHeart)`
 height:55px;
 width:30px;
 color:#2a69cb;
@@ -467,12 +543,14 @@ export const Stock = styled.div`
 >h5{
     font-size:16px;
     color:#000;
+    margin-top:0;
    
 }
-> span{
+p>span{
    color:#000;
    opacity:55%;
    font-size:14px;
+   padding:0;
    
  
 }
@@ -546,13 +624,13 @@ export const Button = styled.div`
 
 `
 export const Benefits = styled.div`
-margin-top:16px;
-list-style:none;
+
+
 display:flex;
 flex-direction:column;
-li>{
+.row{
     display:flex;
-    margin-top:1rem;
+    
     p{
         margin-left:10px;
         font-size:14px;
@@ -564,18 +642,35 @@ li>{
         padding:0;
         margin:0
     }
+    .bottom{
+        margin-bottom:0;
+        margin-top:2px;
+    }
 }
 
 `
-export const TrophyIcon = styled.div`
+export const TrophyIcon = styled(GrTrophy)`
+width:14px;
+color:#000;
+opacity:55%;
+padding-left:3px;
+padding-top:2px;
 
 
 `
-export const CheckIcon = styled.div`
-
+export const CheckIcon = styled(BiCheckShield)`
+width:33px;
+height:27px;
+padding-top:10px;
+color:#000;
+opacity:55%;
 
 `
 export const Column = styled.div`
+
+
+`
+export const ArrowIcon = styled(TbArrowBack)`
 
 
 `

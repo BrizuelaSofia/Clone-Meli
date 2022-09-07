@@ -29,7 +29,44 @@ function Product(){
 
 const Info =() =>{
     return(
+        
         <Description>
+   
+            <p>Caracteristicas principales</p>
+            <table>
+                <tbody>
+                    <tr rowspan>
+                        <th>Marca</th>
+                    <td>Peluches dulzura</td>
+                    </tr>
+                    <tr rowspan>
+                        <th>Modelo</th>
+                    <td>Oso</td>
+                    </tr>
+                    <tr rowspan>
+                        <th>Franquicia</th>
+                    <td>Arebitos</td>
+                    </tr>
+                    <tr rowspan>
+                        <th>Animal</th>
+                    <td>Oso</td>
+                    </tr>
+                    <tr rowspan>
+                        <th>Personaje</th>
+                    <td>Oso</td>
+                    </tr>
+                </tbody>
+            </table>
+       
+            <p>Otras características</p>
+            <div>
+            <div>
+                <p>Material: Peluche</p>
+                <p>Es material hipoalergénico: Sí</p>
+            
+            </div>
+            <p>Altura x Ancho: 45 cm x 35 cm</p>
+            </div>
             <h4>Descripción</h4>
             <p>Hermosisimo peluche para regalar enamorados. De 45 cm.<br/>
                Entrega en nuestro local de once o te enviamos a todo el país.

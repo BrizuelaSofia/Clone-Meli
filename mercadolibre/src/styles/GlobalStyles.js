@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import { GoLocation } from "react-icons/go";
 import { FaMedal} from "react-icons/fa";
-import { WiTime8} from "react-icons/wi";
+import { HiOutlineHeart, HiOutlineCheck, HiOutlineShieldCheck} from "react-icons/hi";
 //contenedor que separa las dos filas.
 //&+a (aplicaseló a los a a partir del segundo.)
 
@@ -327,7 +327,254 @@ a.link{
 
 `
 
+// Container4, State, Row3, HeartIcon, Price, Card2, Stock, ButtonCard, Button, Benefits, TrophyIcon, CheckIcon
+export const Container4 = styled.div`
+display:flex;
+position:relative;
+right:6px;
+flex-direction:column;
+padding:32px 16px;
+margin:22px;
+border:1px solid #ddd;
+border-radius:5px;
 
+
+
+
+
+`
+export const State = styled.div`
+font-size:14px;
+margin-bottom:1px;
+margin-top:0;
+color:#000;
+opacity:55%;
+
+`
+export const Row3 = styled.div`
+display:flex;
+justify-content:space-between;
+
+>h1{
+    width:100%;
+    font-size:22px;
+    line-height:25.9px;
+    color:#000;
+    opacity:90%;
+    font-weight:500;
+}
+
+`
+export const HeartIcon = styled(HiOutlineHeart)`
+height:55px;
+width:30px;
+color:#2a69cb;
+
+
+
+`
+export const Price = styled.div`
+>span{
+font-size:36px;
+line-height:36px;
+padding:24px 0;
+font-weight:inherit;
+color:#000;
+opacity:90%;
+
+}
+.black{
+        margin-top:2px;
+        margin-bottom:1px;
+        font-size:18px;
+        color:#000;
+        opacity:90%
+}
+.green{
+    font-size:18px;
+    color:#00a650;
+    font-weight:400;
+    padding:0;
+    
+}
+.doble{
+    margin:0;
+    font-size:14px;
+    color:#00a650;
+    font-weight:500;
+}
+.point{
+    color:#000;
+    opacity:90%;
+    font-weight:400;
+    padding:3px
+    
+}
+.link{
+    font-size:14px;
+    color:#3483fa;
+    font-weight:400;
+    text-decoration:none;
+    padding-left:1px;
+}
+.link:hover{
+    color:#2a6acb;
+}
+
+
+`
+export const Card2 = styled.div`
+
+display:flex;
+flex-direction:column;
+margin-bottom:2rem;
+.top{
+    
+    margin-right:10px
+}
+>div{
+    margin-top:16px;
+    margin-left:8px;
+    display:flex;
+    flex-direction:column;
+    .title{
+        font-size:16px;
+        margin-top:5px;
+        color:#00a650;
+    }
+    .text{
+        font-size:14px;
+        color:#000;
+        opacity:55%;
+
+    }
+    .link{
+        font-size:14px;
+        margin-top:5px;
+        margin-left:20px;
+        color:#3483fa;
+        // color:#2a6acb; este para hover.
+        text-decoration:none;
+    }
+    .link:hover{
+        color:#2a6acb;
+    }
+}
+
+
+`
+export const Stock = styled.div`
+>h5{
+    font-size:16px;
+    color:#000;
+   
+}
+> span{
+   color:#000;
+   opacity:55%;
+   font-size:14px;
+   
+ 
+}
+input{
+    width:20px;
+    color:#3483fa;
+   border-left:1px solid #3483fa;
+   border-right:1px solid #3483fa;
+   border-top:none;
+   border-bottom:none;
+   outiline:0;
+}
+
+`
+export const ButtonCard = styled.div`
+margin-top:16px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content-center;
+font-size:15px;
+padding:12px 10px;
+outline:0;
+cursor:pointer;
+
+
+.solid{
+    background-color:#3483fa;
+    color:white; 
+}
+.solid:hover{
+background-color:#1f4e96;
+opacity:90%;
+}
+
+.light{
+    margin-top:8px;
+    background-color:rgba(65,137,230,.15);
+    color:#3483fa;
+}
+.light:hover{
+    background-color:rgba(65,137,230,.25);
+   
+    }
+Button{
+    font-size:16px;
+
+    width:108%;
+    padding:0;
+    border-radius:6px;
+    text-transform:lowercase;
+    transition:all 300ms ease-in-out;
+}
+Button>p{
+   margin-top:10px;
+   margin-bottom:10px;
+}
+Button p:first-letter{
+    text-transform:uppercase;
+}
+
+`
+export const Button = styled.div`
+.solid{
+    background-color:#3483fa;
+    color:white;
+
+}
+
+
+
+`
+export const Benefits = styled.div`
+margin-top:16px;
+list-style:none;
+display:flex;
+flex-direction:column;
+li>{
+    display:flex;
+    margin-top:1rem;
+    p{
+        margin-left:10px;
+        font-size:14px;
+        color:#3483fa;
+    }
+    p>span{
+        color:#000;
+        opacity:55%;
+        padding:0;
+        margin:0
+    }
+}
+
+`
+export const TrophyIcon = styled.div`
+
+
+`
+export const CheckIcon = styled.div`
+
+
+`
 export const Column = styled.div`
 
 

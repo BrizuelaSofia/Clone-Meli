@@ -17,9 +17,11 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import logo from '../assets/logo.png'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import {BsCart2} from "react-icons/bs";
 import '../styles/style.css'
 import { maxWidth } from '@mui/system';
+
+
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -136,8 +138,9 @@ export default function PrimarySearchAppBar() {
       <div style={{display:'flex', flexDirection:'column', position:'relative', right:'86px', top:'4px'}}>
         <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{width:'5rem',  position:'relative', bottom:'18px', left:'28px'}}/>
         
-      <div style={{display:'flex',color:'#333',paddingBottom:'5px', paddingLeft:'28px', position:'relative', left:'25px'}}>
-     <Typography sx={{px:'1rem'}}>Creá tu cuenta</Typography> 
+              <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'30px', position:'relative', left:'25px',top:"8px", width:'100%', fontSize:"14px" }}>
+   
+       <Typography  style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</Typography>
       {/* <MenuItem>
         <IconButton
           size="large"
@@ -150,7 +153,7 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Notifications</p>
       </MenuItem> */}
-      <Typography sx={{px:'1rem'}}>Ingresá</Typography> 
+     <Typography style={{paddingLeft:'20px', fontSize:'13px'}}>Ingresá</Typography> 
       {/* <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -163,8 +166,10 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Profile</p>
       </MenuItem> */}
-      <Typography sx={{px:'1rem'}}>Mis Compras</Typography> 
-      <ShoppingCartOutlinedIcon></ShoppingCartOutlinedIcon>
+            <Typography style={{paddingLeft:'20px', fontSize:'13px'}}>Mis Compras</Typography> 
+     
+     
+    <BsCart2 style={{fontSize:'20px',  paddingRight:'10px'}}></BsCart2> 
       </div>
 </div>
     </Menu>
@@ -231,9 +236,9 @@ export default function PrimarySearchAppBar() {
              <div style={{display:'flex', flexDirection:'column', position:'relative', right:'86px', top:'4px' }}>
         <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{width:'20rem', position:'relative', bottom:'18px', left:'28px'}}/>
         
-        <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'28px', position:'relative', left:'25px' }}>
+                <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'30px', position:'relative', left:'25px',top:"8px", width:'100%', fontSize:"14px" }}>
    
-        <Typography  sx={{px:'1rem'}}>Creá tu cuenta</Typography> 
+       <Typography  style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</Typography>
             {/* <IconButton
               size="large"
               aria-label="show 17 new notifications"
@@ -243,7 +248,7 @@ export default function PrimarySearchAppBar() {
                 <NotificationsIcon />
               </Badge>
             </IconButton> */}
-      <Typography sx={{px:'1rem'}}>Ingresá</Typography> 
+      <Typography style={{paddingLeft:'20px', fontSize:'13px'}}>Ingresá</Typography> 
 
             {/* <IconButton
               size="large"
@@ -256,10 +261,10 @@ export default function PrimarySearchAppBar() {
             >
               <AccountCircle />
             </IconButton> */}
-      <Typography sx={{px:'1rem'}}>Mis Compras</Typography> 
+            <Typography style={{paddingLeft:'20px', fontSize:'13px'}}>Mis Compras</Typography> 
      
      
-      <ShoppingCartOutlinedIcon></ShoppingCartOutlinedIcon> 
+   <BsCart2 style={{fontSize:'20px',  paddingRight:'10px'}}></BsCart2> 
       </div>
       </div>
 

@@ -1,11 +1,11 @@
 
 import styled from "styled-components";
-import { GoLocation } from "react-icons/go";
+import { GoLocation, GoStar } from "react-icons/go";
 import { FaMedal} from "react-icons/fa";
 import { BiCheckShield} from "react-icons/bi";
 import { GrTrophy } from "react-icons/gr";
 import { TbArrowBack } from "react-icons/tb";
-import { BsHeart} from "react-icons/bs";
+import { BsHeart, BsTruck} from "react-icons/bs";
 //contenedor que separa las dos filas.
 //&+a (aplicaseló a los a a partir del segundo.)
 
@@ -410,6 +410,7 @@ position:relative;
 right:6px;
 flex-direction:column;
 padding:32px 16px;
+padding-top:26px;
 margin:22px;
 border:1px solid #ddd;
 border-radius:5px;
@@ -421,7 +422,7 @@ border-radius:5px;
 `
 export const State = styled.div`
 font-size:14px;
-margin-bottom:1px;
+
 margin-top:0;
 color:#000;
 opacity:55%;
@@ -442,8 +443,8 @@ justify-content:space-between;
 
 `
 export const HeartIcon = styled(BsHeart)`
-height:55px;
-width:30px;
+height:60px;
+width:20px;
 color:#2a69cb;
 
 
@@ -453,6 +454,7 @@ export const Price = styled.div`
 >span{
 font-size:36px;
 line-height:36px;
+margin:0;
 padding:24px 0;
 font-weight:inherit;
 color:#000;
@@ -510,24 +512,30 @@ margin-bottom:2rem;
 }
 >div{
     margin-top:16px;
-    margin-left:8px;
+    margin-left:4px;
     display:flex;
     flex-direction:column;
+    
     .title{
         font-size:16px;
         margin-top:5px;
         color:#00a650;
+        padding-left:6px;
+    }
+    .left{
+       padding:2px
     }
     .text{
         font-size:14px;
         color:#000;
         opacity:55%;
+        padding-left:26px
 
     }
     .link{
         font-size:14px;
         margin-top:5px;
-        margin-left:20px;
+        margin-left:26px;
         color:#3483fa;
         // color:#2a6acb; este para hover.
         text-decoration:none;
@@ -543,8 +551,12 @@ export const Stock = styled.div`
 >h5{
     font-size:16px;
     color:#000;
+    font-weight:600;
     margin-top:0;
    
+}
+p>strong{
+    font-weight:600
 }
 p>span{
    color:#000;
@@ -670,8 +682,30 @@ export const Column = styled.div`
 
 
 `
-export const ArrowIcon = styled(TbArrowBack)`
+export const StarIcon = styled(GoStar)`
+color:#3483fa;
+padding:1px;
+font-size:18px;
+margin-bottom:10px;
+margin-top:0;
+position:relative;
+bottom:5px
 
+`
+export const TruckIcon = styled(BsTruck)`
+
+position:relative;
+right:3px;
+top:5px;
+font-size:20px
+
+`
+export const ArrowIcon = styled(TbArrowBack)`
+position:relative;
+right:5px;
+top:5px;
+font-size:23px;
+color:#00a650;
 
 `
 

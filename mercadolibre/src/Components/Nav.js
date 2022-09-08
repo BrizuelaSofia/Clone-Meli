@@ -3,8 +3,8 @@ import {Container1, Row} from '../styles/GlobalStyles'
 function Hero(){
     return ( 
         <div> 
-    <p style={{fontSize:'14px', lineHeight:'18.9px', textAlign:'left'}}>También puede interesarte:<span style={{ color:'#000000',
-    opacity:'90%'}}>squishmallows</span></p> 
+    <p style={{fontSize:'14px', lineHeight:'18.9px', textAlign:'left', marginBottom:'8px'}}>También puede interesarte:<span style={{ color:'#000000',
+    opacity:'90%', padding:'5px'}}>squishmallows</span></p> 
      <Container1>
 
      <Row>

@@ -2,13 +2,15 @@ import React from "react";
 import { SellerInfo } from './SellerInfo';
 import {Container2, Panel, Bear, Column, Description, Section} from '../styles/GlobalStyles'
 import { Sale } from './Sale';
+import Zoom from './Zoom'
 function Product(){
     return(
         <Container2>
             <Panel>
                 <Column>
                 <Bear>
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_902530-MLA40254269277_122019-O.webp" alt="osito"/>
+                 
+                 <Zoom></Zoom>
                 </Bear>
                 <Info/>
                

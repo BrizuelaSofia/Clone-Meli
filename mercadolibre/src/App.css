@@ -3,3 +3,18 @@
 }
 
 
+
+#right-zoom{
+
+ position:relative;
+ left:39.9rem;
+ bottom:31.4rem;
+ z-index:3;
+
+
+}
+
+/* .image-zoom{
+  width:10px;
+} */
+

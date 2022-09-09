@@ -69,11 +69,9 @@ export const Bear = styled.div`
 display:flex;
 align-items:center;
 justify-content:center;
-// height:530px;
+height:530px;
 
->img{
-    height:75%;
-}
+
 
 
 `

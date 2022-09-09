@@ -1,14 +1,14 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import {Container4, State, Row3,Bear,  HeartIcon, Price, Card2, Stock, ButtonCard, Benefits, TrophyIcon, CheckIcon, ArrowIcon, TruckIcon, StarIcon} from '../styles/GlobalStyles'
+import {Container4, State, Row3,  HeartIcon, Price, Card2, Stock, ButtonCard, Benefits, TrophyIcon, CheckIcon, ArrowIcon, TruckIcon, StarIcon} from '../styles/GlobalStyles'
 export const Sale= () =>{
   return(
     <Container4 >
         <State>Nuevo  |  118 vendidos</State>
         <Row3>
-          <Bear>
+          
             <h1>Peluche Oso Amor Corazón Enamorado Novio Novia Amigo Amiga</h1>
-       </Bear>
+       
         <HeartIcon/>  </Row3>
         {/* <img src="" alt="stars"/> */}
         <div style={{display:'flex', height:'25px'}}>

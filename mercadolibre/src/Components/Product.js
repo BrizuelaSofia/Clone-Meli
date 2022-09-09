@@ -8,9 +8,9 @@ function Product(){
         <Container2>
             <Panel>
                 <Column>
-              
+                 <Bear>   <Zoom></Zoom></Bear>
                  
-                 <Zoom></Zoom>
+              
              
                 <Info/>
                

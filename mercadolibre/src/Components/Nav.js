@@ -9,7 +9,7 @@ function Hero(){
 
      <Row>
         <a  className="black" href="https://github.com/BrizuelaSofia" target="_blank" rel="noreferrer" >Volver al listado</a>
-        <a href="https://github.com/BrizuelaSofia" target="_blank" rel="noreferrer">Juegos y juguetes ≻ Peluches</a>
+        <a href="https://github.com/BrizuelaSofia" target="_blank" rel="noreferrer">Juegos y juguetes <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#666" d="M1 0l4 4-4 4"></path></svg> Peluches</a>
         
     </Row>
     <Row>

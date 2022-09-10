@@ -7,7 +7,7 @@ export const Sale= () =>{
         <State>Nuevo  |  118 vendidos</State>
         <Row3>
           
-            <h1>Peluche Oso Amor Corazón Enamorado Novio Novia Amigo Amiga</h1>
+            <h1>Peluche Oso Amor Corazón <br/> Enamorado Novio Novia Amigo Amiga</h1>
        
         <HeartIcon/>  </Row3>
         {/* <img src="" alt="stars"/> */}
@@ -17,7 +17,7 @@ export const Sale= () =>{
         <StarIcon/>
         <StarIcon/>
         <StarIcon/>
-         <p style={{position:'relative', bottom:'20px', left:'4px', color:'3483fa', fontSize:'14px'}}>(8)</p>
+         <p style={{position:'relative', bottom:'20px', left:'4px', color:'#3483fa', fontSize:'14px'}}>(8)</p>
 </div>
         
         <Price>

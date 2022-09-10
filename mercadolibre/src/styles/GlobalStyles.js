@@ -1,11 +1,12 @@
-
 import styled from "styled-components";
 import { GoLocation, GoStar } from "react-icons/go";
-import { FaMedal} from "react-icons/fa";
-import { BiCheckShield} from "react-icons/bi";
+import { FaMedal } from "react-icons/fa";
+import { BiCheckShield } from "react-icons/bi";
 import { GrTrophy } from "react-icons/gr";
 import { TbArrowBack } from "react-icons/tb";
-import { BsHeart, BsTruck} from "react-icons/bs";
+import { BsHeart, BsTruck } from "react-icons/bs";
+
+
 //contenedor que separa las dos filas.
 //&+a (aplicaseló a los a a partir del segundo.)
 
@@ -69,7 +70,11 @@ export const Bear = styled.div`
 display:flex;
 align-items:center;
 justify-content:center;
-height:530px;
+height:515px;
+
+margin-bottom:50px;
+padding-left:50px
+
 
 
 
@@ -150,7 +155,7 @@ opacity:90%;
 }
 .flex{
     display:flex;
-    font-size:13px;
+    font-size:14px;
     
 }
 .pleft{
@@ -169,9 +174,13 @@ opacity:90%;
 
 
 `
-export const Section =styled.div`
-padding:0 16px 22px ;
-margin:5px 16px;
+export const Section = styled.div`
+padding:0px 16px;
+margin-top:16px;
+padding-bottom:35px;
+margin-bottom:16px;
+margin-left:22px;
+margin-right:16px;
 border:1px solid #ddd;
 border-radius:8px 8px 0 0;
 
@@ -181,8 +190,9 @@ p.title-guaranty{
     color:#000;
     opacity:90%;
     border-top:1px solid #ddd;
-    padding-top:30px;
-    margin-top:30px
+    padding-top:33px;
+    margin-top:33px;
+   
     
   
 }
@@ -192,19 +202,33 @@ p.title{
     font-size:16px;
     color:#000;
     opacity:90%;
+    margin-top:27px;
+    margin-bottom:10px
     
 
+}
+p.descriptionP{
+    font-size:14px;
+    color:#000;
+    opacity:55%;
+    margin-top:25px;
+    margin-bottom:22px 
 }
 p.description{
     font-size:14px;
     color:#000;
     opacity:55%;
-    padding-bottom:10px;
+    padding-bottom:5px;
+    padding-top:0;
+    margin-top:0
+   
 }
 a.link{
     text-decoration:none;
     color:#3483fa;
     font-size:14px;
+    
+   
   
    
   
@@ -212,8 +236,12 @@ a.link{
 `
 
 export const Container3 = styled.div`
-padding:20px 16px;
-margin:32px 16px 18px;
+padding:14px 16px;
+margin-top:16px;
+padding-bottom:35px;
+margin-bottom:16px;
+margin-left:22px;
+margin-right:3px;
 display:flex;
 flex-direction:column;
 border:1px solid #ddd;
@@ -224,7 +252,7 @@ border-radius:8px;
 
 .seller-title{
     font-size:18px;
-    margin-bottom:20px;
+    margin-bottom:15px;
     color:#000;
     opacity:90%;
 
@@ -244,14 +272,15 @@ text-align:start;
 }
 div>p{
     font-size:16px;
-    line-height:18.9px;
+    
     color:#000;
     opacity:90%;
 
     
 }
 .left{
-    padding-left:10px
+    padding-left:10px;
+    
 }
 .top{
 position:relative;
@@ -268,7 +297,7 @@ p.green{
 }
 .strong{
     position:relative;
-    bottom:10px;
+    bottom:16px;
    color:#000;
    opacity:55%;
    font-weight:100;
@@ -281,7 +310,7 @@ padding-top:17px;
 
 
 `
-export const GoldIcon= styled(FaMedal)`
+export const GoldIcon = styled(FaMedal)`
 opacity:.5px;
 color:#00a650;
 
@@ -300,8 +329,9 @@ list-style:none;
 width:100%;
 display:grid;
 grid-template-columns: repeat(5, 1fr);
-grid-gap:7px;
-padding:0 4px;
+grid-gap:2px;
+padding:0 2px;
+margin-top:10px;
 >li{
     width:93%;
     height:8px;
@@ -395,6 +425,7 @@ a.link{
     text-decoration:none;
     color:#3483fa;
     font-size:14px;
+    
    
  
 }
@@ -404,14 +435,16 @@ a.link{
 // Container4, State, Row3, HeartIcon, Price, Card2, Stock, ButtonCard, Button, Benefits, TrophyIcon, CheckIcon
 export const Container4 = styled.div`
 display:flex;
-position:relative;
-right:6px;
+width:290px;
+height:792;
 flex-direction:column;
-padding:32px 16px;
-padding-top:26px;
-margin:22px;
+padding:20px 45px;
+padding-left:16px;
+
+margin-top:16px;
+margin-left:22px;
 border:1px solid #ddd;
-border-radius:5px;
+border-radius:8px;
 
 
 
@@ -421,29 +454,34 @@ border-radius:5px;
 export const State = styled.div`
 font-size:14px;
 
-margin-top:0;
+margin-top:3px;
 color:#000;
 opacity:55%;
 
 `
 export const Row3 = styled.div`
-display:flex;
-justify-content:space-between;
+
 
 >h1{
     width:100%;
     font-size:22px;
     line-height:25.9px;
     color:#000;
+    margin-top:8px;
+    margin-bottom:0;
+    height:70px;
     opacity:90%;
     font-weight:500;
 }
 
 `
 export const HeartIcon = styled(BsHeart)`
-height:60px;
-width:20px;
-color:#2a69cb;
+position:relative;
+left:102.5%;
+bottom:66px;
+
+font-size:21px;
+color:#3483fa;
 
 
 
@@ -474,7 +512,8 @@ opacity:90%;
     
 }
 .doble{
-    margin:0;
+    margin-top:0;
+    margin-bottom:5px;
     font-size:14px;
     color:#00a650;
     font-weight:500;
@@ -492,6 +531,7 @@ opacity:90%;
     font-weight:400;
     text-decoration:none;
     padding-left:1px;
+
 }
 .link:hover{
     color:#2a6acb;
@@ -533,9 +573,10 @@ margin-bottom:2rem;
     .link{
         font-size:14px;
         margin-top:5px;
+     
         margin-left:26px;
         color:#3483fa;
-        // color:#2a6acb; este para hover.
+     
         text-decoration:none;
     }
     .link:hover{
@@ -552,6 +593,12 @@ export const Stock = styled.div`
     font-weight:600;
     margin-top:0;
    
+   
+   
+}
+>p{
+    
+    margin-bottom:25px
 }
 p>strong{
     font-weight:600
@@ -582,7 +629,9 @@ flex-direction:column;
 align-items:center;
 justify-content-center;
 font-size:15px;
-padding:12px 10px;
+margin-left:23px;
+margin-right:3px;
+margin-bottom:10px;
 outline:0;
 cursor:pointer;
 
@@ -607,8 +656,8 @@ opacity:90%;
     }
 Button{
     font-size:16px;
-
-    width:108%;
+    margin-left:10px;
+    width:120%;
     padding:0;
     border-radius:6px;
     text-transform:lowercase;
@@ -653,7 +702,7 @@ flex-direction:column;
         margin:0
     }
     .bottom{
-        margin-bottom:0;
+        margin-bottom:8px;
         margin-top:2px;
     }
 }
@@ -683,11 +732,13 @@ export const Column = styled.div`
 export const StarIcon = styled(GoStar)`
 color:#3483fa;
 padding:1px;
-font-size:18px;
+font-size:16.5px;
 margin-bottom:10px;
 margin-top:0;
 position:relative;
-bottom:5px
+bottom:7px;
+
+
 
 `
 export const TruckIcon = styled(BsTruck)`
@@ -706,6 +757,13 @@ font-size:23px;
 color:#00a650;
 
 `
+
+
+
+
+
+
+
 
 
 

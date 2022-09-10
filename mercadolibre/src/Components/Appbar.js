@@ -20,6 +20,7 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import {BsCart2} from "react-icons/bs";
 import '../styles/style.css'
 import { maxWidth } from '@mui/system';
+import { MdLocationOn } from "react-icons/md";
 
 
 
@@ -135,10 +136,10 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Messages</p>
       </MenuItem> */}
-      <div style={{display:'flex', flexDirection:'column', position:'relative', right:'86px', top:'4px'}}>
-        <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{width:'5rem',  position:'relative', bottom:'18px', left:'28px'}}/>
+      <div style={{display:'flex', flexDirection:'column',marginBottom:'10px' }}>
+        <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{width:'21rem',  }}/>
         
-              <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'30px', position:'relative', left:'25px',top:"8px", width:'100%', fontSize:"14px" }}>
+              <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'30px', paddingTop:'20px', width:'100%', fontSize:"14px" }}>
    
        <Typography  style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</Typography>
       {/* <MenuItem>
@@ -166,7 +167,7 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Profile</p>
       </MenuItem> */}
-            <Typography style={{paddingLeft:'20px', fontSize:'13px'}}>Mis Compras</Typography> 
+            <Typography style={{paddingLeft:'20px',paddingRight:'20px', fontSize:'13px'}}>Mis Compras</Typography> 
      
      
     <BsCart2 style={{fontSize:'20px',  paddingRight:'10px'}}></BsCart2> 
@@ -179,8 +180,8 @@ export default function PrimarySearchAppBar() {
     
     <Box style={{ flexGrow: 1, backgroundColor:'red'}}>
       
-      <AppBar position="static">
-        <Toolbar style={{backgroundColor:'#fff159', height:'5.5rem', paddingTop:'12.5px'}}>
+      <AppBar position="static" style={{boxShadow:'0 1px 0 0 rgb(0 0 0 / 10%)'}}>
+        <Toolbar style={{backgroundColor:'#fff159', height:'5.5rem', paddingTop:'12.5px', paddingLeft:'150px', paddingRight:'160px'}}>
        
           {/* <Typography
             variant="h6"
@@ -191,34 +192,34 @@ export default function PrimarySearchAppBar() {
             MUI
            
           </Typography> */}
-        <div style={{display:'flex', flexDirection:'column', textAlign:'start', paddingLeft:'40px', marginBottom:'10px'}}>
+        <div style={{display:'flex', flexDirection:'column', textAlign:'start' ,marginBottom:'10px'}}>
             <img src={logo} alt='meli' style={{ width:'11.2rem', marginTop:'3.3rem'}}/>
            <div style={{textAlign: 'start', marginBottom:'30px',color:'rgba(0,0,0,.5)'}}>            
-           <LocationOnOutlinedIcon style={{position:'relative', left:'10px', bottom:'10px', fontSize:'30px'}}/>
-            <Typography style={{ fontSize:'12px', position:'relative', bottom:'45px', left:'40px'}}> 
+           <MdLocationOn style={{position:'relative', left:'10px', bottom:'15px', fontSize:'30px', color:''}}/>
+            <Typography style={{ fontSize:'12px', position:'relative', bottom:'45px', left:'40px', lineHeight:'15px', backgroundColor:'#fff159'}}> 
 
                 Enviar a <br/>
-                Capital Federal
+                <span style={{fontSize:'14px', color:'#333', position:'relative', right:'15px'}}>Capital Federal</span>
             </Typography>
            
             </div>
         </div>  
           
-         <div style={{flexGrow:1, position:'relative'}}>
-          <Search style={{backgroundColor:'white', display:'flex', flexDirection:'row-reverse',left:'4px', bottom:'18px', width:'92vh', borderRadius:'1px' }}>
+         <div style={{flexGrow:1, position:'relative', }}>
+          <Search style={{backgroundColor:'white',boxShadow:'0 1px 2px 0 rgb(0 0 0 / 20%)', display:'flex', flexDirection:'row-reverse',left:'4px', bottom:'18px', borderRadius:'1px', justifyContent:'space-between', width:'100%',  }}>
         
             <SearchIconWrapper>
               <SearchIcon sx={{color:'#666', fontSize:'23px', position:'relative', left:'5px', bottom:'2px'}}/>
             </SearchIconWrapper>    
-            <div style={{color:'black', fontSize:'16px', position:'relative', right:'318px'}}>
+            <div style={{color:'#333', fontSize:'16px', width:'100%', fontFamily:'inherit' }}>
             <StyledInputBase  
               placeholder="Buscar productos, marcas y más…"
-              inputProps={{ 'aria-label': 'search'  }}
+             
             />
             </div>
           </Search>
-          <div style={{color:'rgba(51,51,51,.6)', fontSize:'14px', lineHeight:'22px', paddingRight:'240px', position:'relative'}}>
-          <span>Categorías</span>
+          <div style={{color:'rgba(51,51,51,.6)', fontSize:'14px', lineHeight:'22px', paddingLeft:'12px', }}>
+          <span >Categorías⋎</span>
           <span>Ofertas</span>
           <span>Historial</span>
           <span>Supermercado</span>
@@ -233,10 +234,10 @@ export default function PrimarySearchAppBar() {
                 <MailIcon />
               </Badge>
             </IconButton> */}
-             <div style={{display:'flex', flexDirection:'column', position:'relative', right:'86px', top:'4px' }}>
-        <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{width:'20rem', position:'relative', bottom:'18px', left:'28px'}}/>
+             <div style={{display:'flex', flexDirection:'column', marginBottom:'10px'}}>
+        <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{width:'21rem'}}/>
         
-                <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'30px', position:'relative', left:'25px',top:"8px", width:'100%', fontSize:"14px" }}>
+                <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'30px', paddingTop:'20px', width:'100%', fontSize:"14px" }}>
    
        <Typography  style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</Typography>
             {/* <IconButton
@@ -261,7 +262,7 @@ export default function PrimarySearchAppBar() {
             >
               <AccountCircle />
             </IconButton> */}
-            <Typography style={{paddingLeft:'20px', fontSize:'13px'}}>Mis Compras</Typography> 
+            <Typography style={{paddingLeft:'20px',paddingRight:'20px', fontSize:'13px'}}>Mis Compras</Typography> 
      
      
    <BsCart2 style={{fontSize:'20px',  paddingRight:'10px'}}></BsCart2> 
@@ -288,3 +289,4 @@ export default function PrimarySearchAppBar() {
     </Box>
   );
 }
+

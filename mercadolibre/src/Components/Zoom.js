@@ -33,8 +33,8 @@ export default function Zoom() {
            
             },
             enlargedImageContainerDimensions: {
-              width:'76%',
-              height: "88%",
+              width:'78%',
+              height: "89%",
        
           
             }, 
@@ -43,7 +43,7 @@ export default function Zoom() {
             lensStyle:{
             backgroundColor:'rgba(0,0,0,.4)', 
             backgroundImage:'none', 
-            cursor:'zoom-in',},
+            cursor:'zoom-in', transform:'none'},
            
             
         
@@ -56,3 +56,4 @@ export default function Zoom() {
  
   );
 }
+

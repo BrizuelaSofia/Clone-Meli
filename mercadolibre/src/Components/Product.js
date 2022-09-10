@@ -8,7 +8,7 @@ function Product(){
         <Container2>
             <Panel>
                 <Column>
-                 <Bear>   <Zoom></Zoom></Bear>
+                 <Bear><Zoom></Zoom></Bear>
                  
               
              
@@ -80,9 +80,9 @@ const Info =() =>{
 }
 const Guaranty =() =>{
     return(
-        <Section style={{width:'312px'}}>
-            <p style={{fontSize:'18px', opacity:'90%', paddingTop:'16px'}}>Devolución Grátis</p>
-            <p className="description">Tenés 30 días desde que recibís el producto para devolverlo. ¡No importa el motivo!</p>
+        <Section >
+            <p style={{fontSize:'18px', opacity:'90%', paddingTop:'12px'}}>Devolución gratis</p>
+            <p className="descriptionP">Tenés 30 días desde que recibís el producto para devolverlo. ¡No importa el motivo!</p>
             <a href="https://github.com/BrizuelaSofia" target="_blank" rel="noreferrer" className="link"> Conocer más sobre devoluciones</a>
             <p className="title-guaranty">Garantía</p>
             <div className="info-guaranty">

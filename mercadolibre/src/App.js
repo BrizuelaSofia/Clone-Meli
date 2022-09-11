@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
  <Appbar></Appbar>
-<Detail/>
+{/* <Detail/> */}
     </div>
   );
 }

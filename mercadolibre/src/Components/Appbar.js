@@ -21,6 +21,12 @@ import {BsCart2} from "react-icons/bs";
 import '../styles/style.css'
 import { maxWidth } from '@mui/system';
 import { GoLocation } from "react-icons/go";
+import "../App.css"
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 
@@ -105,11 +111,21 @@ export default function PrimarySearchAppBar() {
       }}
       open={isMenuOpen}
       onClose={handleMenuClose}
+
+
+
     >
+      
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}>My account</MenuItem> 
+    
+   
     </Menu>
+ 
+    
+
   );
+  
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   const renderMobileMenu = (
@@ -127,21 +143,56 @@ export default function PrimarySearchAppBar() {
       }}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
-    >
+    >  
+      {/* <Accordion>
+       
+       <AccordionSummary
+         expandIcon={<ExpandMoreIcon />}
+         aria-controls="panel1a-content"
+         id="panel1a-header"
+       >
+         <Typography>Accordion 1</Typography>
+       </AccordionSummary>
+       <AccordionDetails>
+         <Typography>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+           malesuada lacus ex, sit amet blandit leo lobortis eget.
+         </Typography>
+       </AccordionDetails>
+     </Accordion> */}
       {/* <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
+        <Accordion>
+  <AccordionSummary
+    expandIcon={<ExpandMoreIcon />}
+    aria-controls="panel1a-content"
+    id="panel1a-header"
+  >
+    <Typography>Accordion 1</Typography>
+  </AccordionSummary>
+  <AccordionDetails>
+    <Typography>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      malesuada lacus ex, sit amet blandit leo lobortis eget.
+    </Typography>
+  </AccordionDetails>
+</Accordion>
       </MenuItem> */}
-      <div style={{display:'flex', flexDirection:'column',marginBottom:'8px', width:'100%' }}>
-        <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{width:'45vh' }}/>
+        <div style={{color:'rgba(51,51,51,.6)', fontSize:'14px', lineHeight:'22px', paddingLeft:'11px', position:'relative', top:'2px'}}>
+          <p style={{paddingRight:'12px'}} >Categorías</p>
+          <p>Ofertas</p>
+          <p>Historial</p>
+          <p>Supermercado</p>
+          <p>Moda</p>
+          <p>Vender</p>
+          <p>Ayuda</p></div>
         
-              <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'30px', paddingTop:'23px', width:'100%', fontSize:"14px" }}>
+        
+      <div style={{display:'flex', flexDirection:'column',marginBottom:'8px', width:'100%' }}>
+        <img className="disney-responsive" src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{maxwidth:'340px', maxHeight:'39px', paddingRight:'26px' }}/>
+        
+              <div style={{color:'#333', paddingBottom:'5px', paddingLeft:'20px', paddingTop:'23px', width:'100%', fontSize:"14px" }}>
    
-       <Typography  style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</Typography>
+       <p style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</p>
       {/* <MenuItem>
         <IconButton
           size="large"
@@ -154,7 +205,7 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Notifications</p>
       </MenuItem> */}
-     <Typography style={{paddingLeft:'20px', fontSize:'13px'}}>Ingresá</Typography> 
+     <p style={{paddingLeft:'20px', fontSize:'13px'}}>Ingresá</p> 
       {/* <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -167,21 +218,23 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Profile</p>
       </MenuItem> */}
-            <Typography style={{paddingLeft:'20px',paddingRight:'20px', fontSize:'13px'}}>Mis Compras</Typography> 
+            <p style={{paddingLeft:'20px',paddingRight:'20px', fontSize:'13px'}}>Mis Compras</p> 
      
      
     <BsCart2 style={{fontSize:'20px',  paddingRight:'10px'}}></BsCart2> 
       </div>
+  
 </div>
     </Menu>
-  );
+  
+  );  
 
   return (
     
     <Box style={{ flexGrow: 1, backgroundColor:'red'}}>
       
       <AppBar position="static" style={{boxShadow:'0 1px 0 0 rgb(0 0 0 / 10%)'}}>
-        <Toolbar style={{backgroundColor:'#fff159', height:'5.5rem', paddingTop:'12.5px', paddingLeft:'148px', paddingRight:'160px'}}>
+        <Toolbar style={{backgroundColor:'#fff159', height:'5.5rem', paddingTop:'12.5px', paddingLeft:'148px', paddingRight:'160px'}} className="responsive-nav">
        
           {/* <Typography
             variant="h6"
@@ -193,39 +246,32 @@ export default function PrimarySearchAppBar() {
            
           </Typography> */}
         <div style={{display:'flex', flexDirection:'column', textAlign:'start' ,marginBottom:'10px'}}>
-            <img src={logo} alt='meli' style={{ width:'11.2rem', marginTop:'3rem'}}/>
+            <img src={logo} alt='meli' style={{ width:'11.2rem', marginTop:'2.4rem'}}/>
            <div style={{textAlign: 'start', marginBottom:'30px',color:'rgba(0,0,0,.5)'}}>            
-           <GoLocation style={{position:'relative', left:'15px', bottom:'12px', fontSize:'25px', color:''}}/>
-            <Typography style={{ fontSize:'12px', position:'relative', bottom:'40px', left:'40px', lineHeight:'15px', backgroundColor:'#fff159'}}> 
+           <GoLocation style={{position:'relative', left:'17px', bottom:'10px', fontSize:'23px', color:''}}/>
+            <Typography style={{ fontSize:'10.5px', position:'relative', bottom:'35px', left:'42px', lineHeight:'13px', backgroundColor:'#fff159', letterSpacing:'.5px'}}> 
 
                 Enviar a <br/>
-                <span style={{fontSize:'14px', color:'#333', position:'relative', right:'15px'}}>Capital Federal</span>
+                <span style={{fontSize:'13px', color:'#333', opacity:'90%', position:'relative', right:'17px'}}>Capital Federal</span>
             </Typography>
            
             </div>
         </div>  
           
          <div style={{flexGrow:1, position:'relative', }}>
-          <Search style={{backgroundColor:'white',boxShadow:'0 1px 2px 0 rgb(0 0 0 / 20%)', display:'flex', flexDirection:'row-reverse',left:'3px', bottom:'18px', borderRadius:'1px', justifyContent:'space-between', width:'100%',  }}>
+          <Search style={{backgroundColor:'white',boxShadow:'0 1px 2px 0 rgb(0 0 0 / 20%)', display:'flex', flexDirection:'row-reverse',left:'3px', bottom:'18px', borderRadius:'1px', justifyContent:'space-between', width:'100%', fontFamily:'inherit' }}>
         
             <SearchIconWrapper>
-              <SearchIcon sx={{color:'#666', fontSize:'23px', position:'relative', left:'5px', bottom:'2px'}}/>
+              <SearchIcon sx={{color:'#333', fontSize:'23px', position:'relative', left:'5px', bottom:'2px'}}/>
             </SearchIconWrapper>    
-            <div style={{color:'#333', fontSize:'16px', width:'100%', fontFamily:'inherit' }}>
+            <div style={{color:'#333', fontSize:'16px', width:'100%', fontFamily:'inherit !important' }}>
             <StyledInputBase  
               placeholder="Buscar productos, marcas y más…"
              
             />
             </div>
           </Search>
-          <div style={{color:'rgba(51,51,51,.6)', fontSize:'14px', lineHeight:'22px', paddingLeft:'11px', position:'relative', top:'2px'}}>
-          <span style={{paddingRight:'12px'}} >Categorías</span>
-          <span>Ofertas</span>
-          <span>Historial</span>
-          <span>Supermercado</span>
-          <span>Moda</span>
-          <span>Vender</span>
-          <span>Ayuda</span></div>
+     
           </div>
           <Box sx={{ flexGrow: 1 }}   />
           <Box sx={{ display: { xs: 'none', md: 'flex'} }}>
@@ -234,13 +280,27 @@ export default function PrimarySearchAppBar() {
                 <MailIcon />
               </Badge>
             </IconButton> */}
+            <div>
+              <div  className="burguer-menu"style={{color:'rgba(51,51,51,.6)', fontSize:'14px', lineHeight:'22px', paddingLeft:'20px', position:'relative', top:'2px'
+            }}>
+          
+          <p style={{paddingRight:'12px'}} >Categorías</p>
+          <p>Ofertas</p>
+          <p>Historial</p>
+          <p>Supermercado</p>
+          <p>Moda</p>
+          <p>Vender</p>
+          <p>Ayuda</p></div>
+        
+           
              <div style={{display:'flex', flexDirection:'column', marginBottom:'8px', width:'100%'}}>
        
-        <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{width:'45vh'}}/>
+       
+        <img className="disney-responsive" src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{maxwidth:'340px', maxHeight:'39px',paddingRight:'26px'}}/>
         
-                <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'30px', paddingTop:'23px', width:'100%', fontSize:"14px" }}>
-   
-       <Typography  style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</Typography>
+                <div className="burguer" style={{color:'#333', paddingBottom:'5px',paddingTop:'23px',  fontSize:"14px"}}>
+    
+       <p  style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</p>
             {/* <IconButton
               size="large"
               aria-label="show 17 new notifications"
@@ -250,8 +310,8 @@ export default function PrimarySearchAppBar() {
                 <NotificationsIcon />
               </Badge>
             </IconButton> */}
-      <Typography style={{paddingLeft:'20px', fontSize:'13px'}}>Ingresá</Typography> 
-
+      <p style={{paddingLeft:'20px', fontSize:'13px'}}>Ingresá</p> 
+      
             {/* <IconButton
               size="large"
               edge="end"
@@ -263,13 +323,13 @@ export default function PrimarySearchAppBar() {
             >
               <AccountCircle />
             </IconButton> */}
-            <Typography style={{paddingLeft:'20px',paddingRight:'20px', fontSize:'13px'}}>Mis Compras</Typography> 
+            <p style={{paddingLeft:'20px',paddingRight:'20px', fontSize:'13px'}}>Mis Compras</p> 
      
      
-   <BsCart2 style={{fontSize:'18px', paddingRight:'10px', position:'relative', bottom:'5px', left:'2px'}}></BsCart2> 
+  
       </div>
       </div>
-
+</div>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton

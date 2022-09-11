@@ -4,6 +4,23 @@
   -webkit-tap-highlight-color: rgba(0,0,0,.1);
 }
 
+@media (max-width:1024px) {
+  .responsive-nav {
+    padding-left: 0 !important;
+  }
+  .disney-responsive{
+    max-height:30px !important;
+  }
+}
+/* .burguer{
+  display: flex !important;
+  flex-direction: column !important;
+} */
+
+.burguer-menu{
+padding-left: 0 !important;
+}
+
 
 
 #right-zoom{

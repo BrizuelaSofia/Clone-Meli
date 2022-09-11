@@ -16,7 +16,7 @@ export default function Zoom() {
             smallImage: {
               isFluidWidth: true,
               src: "https://http2.mlstatic.com/D_NQ_NP_902530-MLA40254269277_122019-O.webp",
-            
+             
             }, 
               largeImage: {
                 

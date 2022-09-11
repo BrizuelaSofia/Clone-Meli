@@ -9,6 +9,7 @@ function Detail(){
       <Wrapper>
         <Nav/>
         <Product/>
+     
       </Wrapper>
 
     )

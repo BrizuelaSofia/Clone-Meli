@@ -6,11 +6,11 @@ import { GrTrophy } from "react-icons/gr";
 import { TbArrowBack } from "react-icons/tb";
 import { BsHeart, BsTruck } from "react-icons/bs";
 
-
 //contenedor que separa las dos filas.
 //&+a (aplicaseló a los a a partir del segundo.)
 
 //NAV
+
 
 export const Container1 = styled.div`
 padding-top:12px;
@@ -62,6 +62,7 @@ background-color:#fff;
 box-shadow:0 1px 3px 0 rgba(0,0,0, .3);
 display:grid;
 grid-template-columns:67fr 33fr;
+// display:flex;
 
 
 
@@ -73,7 +74,7 @@ justify-content:center;
 height:515px;
 
 margin-bottom:50px;
-padding-left:50px
+padding-left:10px
 
 
 
@@ -132,13 +133,14 @@ color:#000;
 opacity:90%;
 }
 .border{
-    border-top:1px solid #ddd;
+   
     margin-top:35px;
     padding-top:5px
 }
 
 .title{
-    
+    border-top: 1px solid #ddd;
+    padding-top:40px;
     font-size:24px;
     line-height:30px;
     color:#000;
@@ -641,8 +643,8 @@ cursor:pointer;
     color:white; 
 }
 .solid:hover{
-background-color:#1f4e96;
-opacity:90%;
+background-color:#2968c8;
+
 }
 
 .light{

@@ -1,5 +1,7 @@
 .App {
-  background-color:rgba(0,0,0,.1)
+  background-color:rgba(0, 0, 0, 0.071);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,.1);
 }
 
 
@@ -8,7 +10,7 @@
 
  position:relative;
  
-  left:38.7rem;
+  left:38.4rem;
  bottom:31.5rem;
 
  z-index:3;
@@ -16,7 +18,143 @@
 
 }
 
-/* .image-zoom{
+.image-zoom{
   width:10px;
-} */
+} 
+ .swiper {
+  width: 95%;
+  height:24rem;
+  margin-left:0px !important;
+  margin-right: auto;
+ 
+  
 
+
+  
+}
+.swiper-wrapper{
+  width:100%;
+  height:100vh !important;
+ 
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;  
+  height: calc((100%) / 2) !important;
+
+ 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 0px!important;
+  background-position: center; 
+}
+.imagen_ciudad{
+  width: 100%;
+  
+  object-fit: cover; 
+
+}
+.mySwiper{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 0.4rem;
+  /* margin-right:5px !important */
+  
+
+ 
+ 
+}
+.carousel_title{
+  text-align: center;
+  font-size: medium;
+  font-family:'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; 
+}
+.carousel_title h2{
+  background-color:  rgba(99, 120, 136, 0.556);
+  width: 100%;
+  height: 2.5rem;
+}
+.city_name{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+}
+.city_name p{
+  background-color: rgba(3, 3, 3, 0.339);
+  width: 100%;
+  height: 8%;
+}
+
+.swiper-button-prev,.swiper-button-next{
+  color: rgb(60, 60, 66) !important ;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  
+  font-size: 3vh !important;
+  background-color: white;
+  color:#3483fa;
+  font-weight: 600;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 19%);
+  padding:20px 28px;
+  border-radius: 100px;
+  
+ 
+}
+.swiper-button-next:hover{
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 19%);
+}
+.card:hover{
+  box-shadow: 0 7px 11px 0 rgb(0 0 0 / 10%), 0 2px 4px 0 rgb(0 0 0 / 10%);
+  transition: max-height .1s ease-out;
+  cursor:pointer;
+}
+
+.swiper-button-prev.swiper-button-disabled {
+  opacity: .01 !important;
+  cursor: auto;
+  pointer-events: none;
+
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 15px !important;
+ 
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 15px !important
+
+;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  top: 160px !important
+;
+  right: 10px;
+  left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  top: 160px !important;
+  
+}

@@ -130,7 +130,7 @@ export default function PrimarySearchAppBar() {
         <p>Messages</p>
       </MenuItem> */}
       <div style={{display:'flex', flexDirection:'column'}}>
-        <img src='https://http2.mlstatic.com/D_NQ_756491-MLA48681720059_122021-OO.webp' alt='offer' style={{width:'5rem'}}/>
+        <img className="src" src='https://http2.mlstatic.com/D_NQ_756491-MLA48681720059_122021-OO.webp' alt='offer'/>
         
       <div style={{display:'flex',color:'#333'}}>
      <Typography>Creá tu cuenta</Typography> 
@@ -169,7 +169,7 @@ export default function PrimarySearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1, backgroundColor:'red' }}>
       <AppBar position="static">
-        <Toolbar sx={{backgroundColor:'#fff159'}} >
+        <Toolbar sx={{backgroundColor:'#fff159'}} className="responsive-nav" >
         
           <Typography
             variant="h6"
@@ -201,9 +201,9 @@ export default function PrimarySearchAppBar() {
           <span>Categorías</span>
           <span>Ofertas</span>
           <span>Historial</span>
-          <span>Supermercado</span>
-          <span>Moda</span>
-          <span>Vender</span>
+          <span className="item-responsive">Supermercado</span>
+          <span className="item-responsive">Moda</span>
+          <span >Vender</span>
           <span>Ayuda</span>
           </Box >
           <Box sx={{ flexGrow: 1 }}   />
@@ -214,7 +214,7 @@ export default function PrimarySearchAppBar() {
               </Badge>
             </IconButton> */}
              <div style={{display:'flex', flexDirection:'column'}}>
-        <img src='https://http2.mlstatic.com/D_NQ_756491-MLA48681720059_122021-OO.webp' alt='offer' style={{width:'20rem'}}/>
+        <img className='src' src='https://http2.mlstatic.com/D_NQ_756491-MLA48681720059_122021-OO.webp' alt='offer'/>
         
         <div style={{display:'flex',color:'#333'}}>
    

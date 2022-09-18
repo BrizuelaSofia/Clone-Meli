@@ -7,7 +7,7 @@ import Carousel from "./slider";
 function Product(){
     return(
         <Container2>
-            <Panel>
+            <Panel className="panel">
              
                 <div>
                  <Bear>
@@ -52,7 +52,7 @@ const Info =() =>{
         <div>
       
         <Description>
-        <div style={{ width:'100vh', height:'63vh', paddingRight:'30px'}}>
+        <div  className="carousel" style={{ width:'100vh', height:'63vh', paddingRight:'30px'}}>
             <Carousel></Carousel>
         </div>
         
@@ -89,11 +89,11 @@ const Info =() =>{
             <p className="other">Otras características</p>
             <div className="flex">
             <div className="column">
-                <p>Material: Peluche</p>
-                <p>Es material hipoalergénico: Sí</p>
+                <p><b style={{fontWeight:600}}>Material:</b> Peluche</p>
+                <p><b style={{fontWeight:600}}>Es material hipoalergénico:</b> Sí</p>
             
             </div>
-            <p className="pleft">Altura x Ancho: 45 cm x 35 cm</p>
+            <p className="pleft"><b style={{fontWeight:600}}>Altura x Ancho:</b> 45 cm x 35 cm</p>
             </div>
             <div className="border">
             <h4 className="title">Descripción</h4>

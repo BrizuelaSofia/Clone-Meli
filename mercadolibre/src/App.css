@@ -3,6 +3,16 @@
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0,0,0,.1);
 }
+@media (max-width:1300px) {
+  .responsive-nav {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+ 
+}
+hr{
+  color:black !important;
+}
 
 @media (max-width:1024px) {
   .responsive-nav {
@@ -11,11 +21,96 @@
   .disney-responsive{
     max-height:30px !important;
   }
+  .item-responsive{
+    font-size: .1px;
+  }
+  .item{
+    padding-left: 0 !important;
 }
+span{
+    padding-left: .5rem;
+    
+}
+
+
+}
+@media (max-width:900px) {
+  .responsive-nav {
+    padding-top: 0 !important;
+ 
+  }
+  .panel{
+    display: flex !important;
+    flex-direction: column;
+  }
+  .searchh{
+    width: 70vw !important;
+  }
+}
+@media (max-width:600px) {
+
+  .searchh{
+    width: 65vw !important;
+  }
+  .pl{
+    padding-left: 20px !important;
+  }
+  .css-1kcggdq-MuiInputBase-root .MuiInputBase-input {
+    padding-left: 15px !important;
+    width: 50vw !important;
+}
+}
+@media (max-width:768px){
+  .cA-DUkk{
+    padding-left: 0 !important;
+  }
+  .WuxEB{
+    width: 100vh  ;
+  }
+  .hdWjdh{
+    width: 90vw ;
+  }
+  .ckNsvn Button{
+    width: 100% !important;
+  }
+  
+}
+
+@media (max-width:426px){
+  .cA-DUkk{
+    padding-left: 0 !important;
+  }
+  .WuxEB{
+    width: 76vw !important;
+  }
+  .hdWjdh{
+    width: 83vw !important;
+  }
+  .ckNsvn Button{
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .carousel{
+    width: 90vw !important;
+  }
+  .image-product{
+    width: 100% !important;
+  }
+  .swiper-slide{
+    width: 100% !important;
+  }
+  
+}
+
 /* .burguer{
   display: flex !important;
   flex-direction: column !important;
 } */
+
+.src{
+  max-width: 340px !important;
+  max-height: 39px !important;
+}
 
 .burguer-menu{
 padding-left: 0 !important;

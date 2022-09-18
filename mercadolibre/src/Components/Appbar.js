@@ -15,17 +15,19 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+import logo2 from '../assets/logo2.png';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import {BsCart2} from "react-icons/bs";
 import '../styles/style.css'
 import { maxWidth } from '@mui/system';
 import { GoLocation } from "react-icons/go";
-import "../App.css"
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-
+import { GrHomeRounded, GrMenu} from "react-icons/gr";
+import { MdOutlineLocalOffer, MdOutlineHeadsetMic, MdOutlineStarOutline} from "react-icons/md";
+import { HiOutlineClock, HiDownload } from 'react-icons/hi'
+import { BsBasket2, BsListTask } from 'react-icons/bs';
+import { TbShirt, TbBuildingStore } from 'react-icons/tb';
+import { RiFileListLine } from 'react-icons/ri'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
@@ -95,7 +97,7 @@ export default function PrimarySearchAppBar() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const menuId = 'primary-search-account-menu';
+  const menuId = <GrMenu/> ;
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
@@ -111,23 +113,13 @@ export default function PrimarySearchAppBar() {
       }}
       open={isMenuOpen}
       onClose={handleMenuClose}
-
-
-
     >
-      
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem> 
-    
-   
+      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
     </Menu>
- 
-    
-
   );
-  
 
-  const mobileMenuId = 'primary-search-account-menu-mobile';
+  const mobileMenuId = <GrMenu/>;
   const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
@@ -143,56 +135,36 @@ export default function PrimarySearchAppBar() {
       }}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
-    >  
-      {/* <Accordion>
-       
-       <AccordionSummary
-         expandIcon={<ExpandMoreIcon />}
-         aria-controls="panel1a-content"
-         id="panel1a-header"
-       >
-         <Typography>Accordion 1</Typography>
-       </AccordionSummary>
-       <AccordionDetails>
-         <Typography>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-           malesuada lacus ex, sit amet blandit leo lobortis eget.
-         </Typography>
-       </AccordionDetails>
-     </Accordion> */}
+    >
+
       {/* <MenuItem>
-        <Accordion>
-  <AccordionSummary
-    expandIcon={<ExpandMoreIcon />}
-    aria-controls="panel1a-content"
-    id="panel1a-header"
-  >
-    <Typography>Accordion 1</Typography>
-  </AccordionSummary>
-  <AccordionDetails>
-    <Typography>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      malesuada lacus ex, sit amet blandit leo lobortis eget.
-    </Typography>
-  </AccordionDetails>
-</Accordion>
+        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+          <Badge badgeContent={4} color="error">
+            <MailIcon />
+          </Badge>
+        </IconButton>
+        <p>Messages</p>
       </MenuItem> */}
-        <div style={{color:'rgba(51,51,51,.6)', fontSize:'14px', lineHeight:'22px', paddingLeft:'11px', position:'relative', top:'2px'}}>
-          <p style={{paddingRight:'12px'}} >Categorías</p>
-          <p>Ofertas</p>
-          <p>Historial</p>
-          <p>Supermercado</p>
-          <p>Moda</p>
-          <p>Vender</p>
-          <p>Ayuda</p></div>
-        
-        
+             <p style={{padding:'8px 20px 8px 26px'}}> <GrHomeRounded/>Inicio</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><MdOutlineLocalOffer/>Ofertas</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><HiOutlineClock/>Historial</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><MdOutlineHeadsetMic/>Ayuda</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><BsBasket2/>Supermercado</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><TbShirt/>Moda</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><MdOutlineStarOutline/>Más vendidos</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><TbBuildingStore/>Tiendas oficiales</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><BsListTask/>Categorías</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><RiFileListLine/>  Resumen</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><MdOutlineLocalOffer/>Vender</p>
+         <p style={{padding:'8px 20px 8px 26px'}}><HiDownload/>¡Comprá y vende con la app!</p>
+      
       <div style={{display:'flex', flexDirection:'column',marginBottom:'8px', width:'100%' }}>
-        <img className="disney-responsive" src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{maxwidth:'340px', maxHeight:'39px', paddingRight:'26px' }}/>
+        <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{  maxWidth:'340px', 
+  maxHeight: '39px' }}/>
         
-              <div style={{color:'#333', paddingBottom:'5px', paddingLeft:'20px', paddingTop:'23px', width:'100%', fontSize:"14px" }}>
+              <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'30px', paddingTop:'23px', width:'100%', fontSize:"14px" }}>
    
-       <p style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</p>
+       <Typography  style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</Typography>
       {/* <MenuItem>
         <IconButton
           size="large"
@@ -205,7 +177,7 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Notifications</p>
       </MenuItem> */}
-     <p style={{paddingLeft:'20px', fontSize:'13px'}}>Ingresá</p> 
+     <Typography style={{paddingLeft:'20px', fontSize:'13px'}}>Ingresá</Typography> 
       {/* <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -218,23 +190,22 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Profile</p>
       </MenuItem> */}
-            <p style={{paddingLeft:'20px',paddingRight:'20px', fontSize:'13px'}}>Mis Compras</p> 
+            <Typography style={{paddingLeft:'20px',paddingRight:'20px', fontSize:'13px'}}>Mis Compras</Typography> 
      
      
     <BsCart2 style={{fontSize:'20px',  paddingRight:'10px'}}></BsCart2> 
+    
       </div>
-  
 </div>
     </Menu>
-  
-  );  
+  );
 
   return (
     
     <Box style={{ flexGrow: 1, backgroundColor:'red'}}>
       
       <AppBar position="static" style={{boxShadow:'0 1px 0 0 rgb(0 0 0 / 10%)'}}>
-        <Toolbar style={{backgroundColor:'#fff159', height:'5.5rem', paddingTop:'12.5px', paddingLeft:'148px', paddingRight:'160px'}} className="responsive-nav">
+        <Toolbar className='responsive-nav ' style={{backgroundColor:'#fff159', height:'5.5rem', paddingTop:'12.5px', paddingLeft:'148px', paddingRight:'160px'}}>
        
           {/* <Typography
             variant="h6"
@@ -245,34 +216,106 @@ export default function PrimarySearchAppBar() {
             MUI
            
           </Typography> */}
+        
+        <Box sx={{ display: { xs: 'none', md: 'flex'} }}>
         <div style={{display:'flex', flexDirection:'column', textAlign:'start' ,marginBottom:'10px'}}>
-            <img src={logo} alt='meli' style={{ width:'11.2rem', marginTop:'2.4rem'}}/>
-           <div style={{textAlign: 'start', marginBottom:'30px',color:'rgba(0,0,0,.5)'}}>            
-           <GoLocation style={{position:'relative', left:'17px', bottom:'10px', fontSize:'23px', color:''}}/>
-            <Typography style={{ fontSize:'10.5px', position:'relative', bottom:'35px', left:'42px', lineHeight:'13px', backgroundColor:'#fff159', letterSpacing:'.5px'}}> 
+           <img src={logo} alt='meli' style={{ width:'11.2rem', marginTop:'2rem'}}/> 
+           <div style={{textAlign: 'start', marginBottom:'20px',color:'rgba(0,0,0,.5)'}}>            
+           <GoLocation style={{position:'relative', left:'18px', bottom:'12px', fontSize:'25px', color:''}}/>
+            <Typography style={{ fontSize:'10.5px', position:'relative', bottom:'40px', left:'45px', lineHeight:'15px', backgroundColor:'#fff159'}}> 
 
                 Enviar a <br/>
-                <span style={{fontSize:'13px', color:'#333', opacity:'90%', position:'relative', right:'17px'}}>Capital Federal</span>
+                <span style={{fontSize:'14px', color:'#333', position:'relative', right:'18px'}}>Capital Federal</span>
             </Typography>
            
+            </div></div>
+      
+           </Box>   
+            <Box sx={{ display: { xs: 'flex', md: 'none'} }}>
+              <div style={{width:'45px'}} >
+            <img src={logo2} alt='meli' style={{ width:'4rem',  marginTop:'2.7rem', position:'relative', top:'15px'}}/>
+            <div style={{textAlign: 'start', marginBottom:'30px',color:'rgba(0,0,0,.5)'}}> 
+            <hr style={{width:'100vw', color:'black'}}></hr>
+            <div style={{display:'flex'}}> 
+             <div style={{paddingTop:'5px', paddingBottom:'10px'}}>
+           <GoLocation style={{position:'relative', left:'5px', bottom:'7px', fontSize:'14px'}}/>
+           
+            <Typography style={{ fontSize:'13px', width:'150px', position:'relative', bottom:'35px', left:'22px', lineHeight:'15px', paddingTop:'10px'}}> 
+                Enviar a Capital Federal
+            </Typography>   </div>  <BsCart2 style={{fontSize:'30px', zIndex:'2'}}></BsCart2> 
+         
+          </div>
+ 
+
+           </div>
+           
             </div>
-        </div>  
+            </Box>
+         
           
-         <div style={{flexGrow:1, position:'relative', }}>
-          <Search style={{backgroundColor:'white',boxShadow:'0 1px 2px 0 rgb(0 0 0 / 20%)', display:'flex', flexDirection:'row-reverse',left:'3px', bottom:'18px', borderRadius:'1px', justifyContent:'space-between', width:'100%', fontFamily:'inherit' }}>
+         <div className="pl" style={{flexGrow:1, position:'relative', }}>
+          <Search  className='searchh'style={{backgroundColor:'white',boxShadow:'0 1px 2px 0 rgb(0 0 0 / 20%)', display:'flex', flexDirection:'row-reverse',left:'3px', bottom:'18px', borderRadius:'1px', justifyContent:'space-between', width:'100%',  }}>
         
             <SearchIconWrapper>
-              <SearchIcon sx={{color:'#333', fontSize:'23px', position:'relative', left:'5px', bottom:'2px'}}/>
+              <SearchIcon sx={{color:'#666', fontSize:'23px', position:'relative', left:'5px', bottom:'2px'}}/>
             </SearchIconWrapper>    
-            <div style={{color:'#333', fontSize:'16px', width:'100%', fontFamily:'inherit !important' }}>
+            <div style={{color:'#333', fontSize:'16px', width:'100%', fontFamily:'inherit' }}>
             <StyledInputBase  
               placeholder="Buscar productos, marcas y más…"
              
             />
             </div>
           </Search>
-     
+          <Box sx={{ display: { xs: 'none', md: 'flex'} }}> 
+          <div style={{display:'flex',color:'rgba(51,51,51,.6)', fontSize:'14px', lineHeight:'22px', paddingLeft:'11px', position:'relative', top:'2px'}}>
+          <span style={{ display:'flex' }} >Categorías<ExpandMoreIcon style={{color:'rgba(51,51,51,.6)'}}fontSize='small'/></span>
+          <span style={{ paddingLeft:'10px'}} >Ofertas</span>
+          <span>Historial</span>
+          <span className="item-responsive">Supermercado</span>
+          <span className="item-responsive">Moda</span>
+          <span className="item">Vender</span>
+          <span>Ayuda</span></div>  </Box>
           </div>
+        
+          {/* <Paper sx={{ width: 320, maxWidth: '100%' }}>
+      <MenuList>
+        <MenuItem>
+          <ListItemIcon>
+            <ContentCut fontSize="small" />
+          </ListItemIcon>
+          <ListItemText>Cut</ListItemText>
+          <Typography variant="body2" color="text.secondary">
+            ⌘X
+          </Typography>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <ContentCopy fontSize="small" />
+          </ListItemIcon>
+          <ListItemText>Copy</ListItemText>
+          <Typography variant="body2" color="text.secondary">
+            ⌘C
+          </Typography>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <ContentPaste fontSize="small" />
+          </ListItemIcon>
+          <ListItemText>Paste</ListItemText>
+          <Typography variant="body2" color="text.secondary">
+            ⌘V
+          </Typography>
+        </MenuItem>
+        <Divider />
+        <MenuItem>
+          <ListItemIcon>
+            <Cloud fontSize="small" />
+          </ListItemIcon>
+          <ListItemText>Web Clipboard</ListItemText>
+        </MenuItem>
+      </MenuList>
+    </Paper> */}
+
           <Box sx={{ flexGrow: 1 }}   />
           <Box sx={{ display: { xs: 'none', md: 'flex'} }}>
             {/* <IconButton size="large" aria-label="show 4 new mails" color="inherit">
@@ -280,27 +323,15 @@ export default function PrimarySearchAppBar() {
                 <MailIcon />
               </Badge>
             </IconButton> */}
-            <div>
-              <div  className="burguer-menu"style={{color:'rgba(51,51,51,.6)', fontSize:'14px', lineHeight:'22px', paddingLeft:'20px', position:'relative', top:'2px'
-            }}>
-          
-          <p style={{paddingRight:'12px'}} >Categorías</p>
-          <p>Ofertas</p>
-          <p>Historial</p>
-          <p>Supermercado</p>
-          <p>Moda</p>
-          <p>Vender</p>
-          <p>Ayuda</p></div>
-        
            
              <div style={{display:'flex', flexDirection:'column', marginBottom:'8px', width:'100%'}}>
        
-       
-        <img className="disney-responsive" src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{maxwidth:'340px', maxHeight:'39px',paddingRight:'26px'}}/>
+        <img src='https://http2.mlstatic.com/D_NQ_887100-MLA50801817839_072022-OO.webp' alt='offer' style={{ maxWidth:'340px', 
+  maxHeight: '39px'}}/>
         
-                <div className="burguer" style={{color:'#333', paddingBottom:'5px',paddingTop:'23px',  fontSize:"14px"}}>
-    
-       <p  style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</p>
+                <div style={{display:'flex',color:'#333', paddingBottom:'5px', paddingLeft:'30px', paddingTop:'23px', width:'100%', fontSize:"14px" }}>
+   
+       <Typography  style={{paddingLeft:'20px', fontSize:'13px'}}>Creá tu cuenta</Typography>
             {/* <IconButton
               size="large"
               aria-label="show 17 new notifications"
@@ -310,8 +341,8 @@ export default function PrimarySearchAppBar() {
                 <NotificationsIcon />
               </Badge>
             </IconButton> */}
-      <p style={{paddingLeft:'20px', fontSize:'13px'}}>Ingresá</p> 
-      
+      <Typography style={{paddingLeft:'20px', fontSize:'13px'}}>Ingresá</Typography> 
+
             {/* <IconButton
               size="large"
               edge="end"
@@ -323,13 +354,14 @@ export default function PrimarySearchAppBar() {
             >
               <AccountCircle />
             </IconButton> */}
-            <p style={{paddingLeft:'20px',paddingRight:'20px', fontSize:'13px'}}>Mis Compras</p> 
+            <Typography style={{paddingLeft:'20px',paddingRight:'20px', fontSize:'13px'}}>Mis Compras</Typography> 
      
      
+   <BsCart2 style={{fontSize:'18px', paddingRight:'10px', position:'relative', bottom:'5px', left:'2px'}}></BsCart2> 
   
       </div>
       </div>
-</div>
+
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -340,7 +372,7 @@ export default function PrimarySearchAppBar() {
               onClick={handleMobileMenuOpen}
               color="inherit"
             >
-              <MoreIcon />
+              <GrMenu />
             </IconButton>
           </Box>
         </Toolbar>
@@ -349,5 +381,6 @@ export default function PrimarySearchAppBar() {
       {renderMenu}
     </Box>
   );
+
 }
 

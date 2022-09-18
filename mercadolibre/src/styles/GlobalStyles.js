@@ -28,9 +28,9 @@ export const Row = styled.div`
     transition:all 300ms ease-in-out;
 
 & + a{
-    padding-left:10px;
-    margin-left:10px;
-    border-left:1px solid  rgba(0,0,0,.2);
+    
+    // border-left:1px solid  rgba(0,0,0,.2);
+    
     
     
   
@@ -38,9 +38,13 @@ export const Row = styled.div`
     
 }
 }
+span{
+    padding:8px
+}
 a.black{
     color:#000000;
     opacity:90%;
+   margin-right:1px
 }
 a:hover{
     color:#2968c8;
@@ -53,6 +57,7 @@ export const Container2 = styled.div`
 display:flex;
 flex-direction:column;
 margin-top:12px;
+flex-wrap:wrap
 
 
 
@@ -145,6 +150,7 @@ opacity:90%;
     line-height:30px;
     color:#000;
     opacity:90%;
+    font-weight:400
 }
 .other{
     font-size:20px;
@@ -392,6 +398,7 @@ div.border{
 .number{
     font-size:22.5px;
     color:#000;
+    font-weight:400
     
     
 
@@ -494,7 +501,7 @@ font-size:36px;
 line-height:36px;
 margin:0;
 padding:24px 0;
-font-weight:inherit;
+font-weight:300;
 color:#000;
 opacity:90%;
 

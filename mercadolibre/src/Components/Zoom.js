@@ -4,7 +4,7 @@ import '../App.css'
 
 export default function Zoom() {
   return (
-    <div style={{width:'450px', height:'400px'}}>
+    <div  className="image-product" style={{width:'450px', height:'400px'}}>
        
         <ReactImageMagnify
           {...{
